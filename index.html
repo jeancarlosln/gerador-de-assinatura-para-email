@@ -1,1 +1,40 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinatura de e-mail</title>
+    <link rel="stylesheet" href="/templates/style.css">
+	<style>
+		/* Remove default styles for <iframe> */
+		iframe {
+			border: none;
+			margin: 0;
+			padding: 0;
+		}
+		/* Make <iframe> responsive */
+		.responsive-iframe {
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 aspect ratio */
+			height: 0;
+			overflow: hidden;
+		}
+		.responsive-iframe iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+
+</head>
+<body>
+<h1>Página de exibição em teste</h1>
+    <div class="responsive-iframe">
+        <iframe src="/templates/default.html"></iframe>
+    </div>
+
+</body>
+</html>
